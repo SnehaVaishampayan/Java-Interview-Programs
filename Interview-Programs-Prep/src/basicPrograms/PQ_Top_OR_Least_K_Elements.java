@@ -15,12 +15,11 @@ public class PQ_Top_OR_Least_K_Elements {
 		}
 
 		// Custom comparator
-		String[] inputStrArray = {"Mango", "Banana", "Pear",  "Pear", "Strawberry", "Strawberry", "Orange", "Orange", "Orange", };
+		String[] inputStrArray = {"Mango", "Banana", "Banana","Banana", "Pear",  "Pear", "Strawberry", "Strawberry", "Orange", "Orange", "Orange", };
 		List<String> top_k_words = getTopKElements_Custom(inputStrArray, 2);
 		for(String eachWord: top_k_words) {
 			System.out.println(eachWord);
 		}
-
 	}
 
 	private static List<String> getTopKElements_Custom(String[] inputStrArray, int k) {
